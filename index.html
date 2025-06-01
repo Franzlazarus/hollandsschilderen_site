@@ -146,7 +146,8 @@
             <p class="section-subtitle">Neem contact met ons op, dan bespreken we de details</p>
             <div class="contact-content" style="display: flex; justify-content: space-between; align-items: flex-start;">
                 <div class="contact-form" style="flex: 1;">
-                    <form>
+                    <form name="contact" method="POST" netlify>
+                        <input type="hidden" name="form-name" value="contact">
                         <div class="form-group">
                             <label for="name">Naam</label>
                             <input type="text" id="name" name="name" required>
